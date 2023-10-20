@@ -134,15 +134,21 @@
                                 <label for="approval_date" class="form-label">Date Approved/Disapproved:</label>
                                 <input type="text" class="form-control" id="approval_date" name="approval_date" value="<?php echo $row['approval_date']; ?>" disabled>
                             </div>
-                            <div class="col-md-4 mb-3">
-                                <label for="request_attachment" class="form-label">Attachment:</label>
-                                <a href="#"><p><?php echo $row['request_attachment']; ?></p></a>
-
+                        </div>
+                         <div class="row mb-3">
+                            <div class="mb-3">
+                                <label for="request_notes" class="form-label">Notes:</label>
+                                <textarea disabled class="form-control" id="request_notes" name="request_notes" rows="8"><?php echo $row['request_notes']; ?></textarea>
                             </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="request_notes" class="form-label">Notes:</label>
-                            <textarea disabled class="form-control" id="request_notes" name="request_notes" rows="8"><?php echo $row['request_notes']; ?></textarea>
+                        <div class="row mb-3">
+                            <div class="col-md-12 mb-3">
+                                <label for="request_attachment" class="form-label">Attachment:</label>
+                                <p>
+                                    <?php echo $row['request_attachment']; ?>
+                                </p>
+                                <embed src="<?php echo '../assets/request_attachments/' . $row["request_attachment"]; ?>" type="application/pdf" width="100%" height="900">
+                            </div>
                         </div>
                     </form>
                 </div>
