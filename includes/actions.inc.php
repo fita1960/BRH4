@@ -5,76 +5,76 @@ if (isset($_POST['action'])) {
     
     switch ($action) {
         case 'registeraccount':
-            registerAccount($_POST);
+            registerAccount();
             break;
         case 'addofficial':
-            addOfficial($_POST);
+            addOfficial();
             break;
         case 'editofficial':
-            editOfficial($_POST);
+            editOfficial();
             break;
         case 'deleteofficial':
-            deleteOfficial($_POST);
+            deleteOfficial();
             break;
         case 'addproject':
-            addProject($_POST);
+            addProject();
             break;
         case 'editproject':
-            editProject($_POST);
+            editProject();
             break;
         case 'deleteproject':
-            deleteProject($_POST);
+            deleteProject();
             break;
         case 'addactivity':
-            addActivity($_POST);
+            addActivity();
             break;
         case 'editactivity':
-            editActivity($_POST);
+            editActivity();
             break;
         case 'deleteactivity':
-            deleteActivity($_POST);
+            deleteActivity();
             break;
         case 'addaccomplishment':
-            addAccomplishment($_POST);
+            addAccomplishment();
             break;
         case 'editaccomplishment':
-            editAccomplishment($_POST);
+            editAccomplishment();
             break;
         case 'deleteaccomplishment':
-            deleteAccomplishment($_POST);
+            deleteAccomplishment();
             break;
         case 'addrequesttype':
-            addRequestType($_POST);
+            addRequestType();
             break;
         case 'editrequesttype':
-            editRequestType($_POST);
+            editRequestType();
             break;
         case 'deleterequesttype':
-            deleteRequestType($_POST);
+            deleteRequestType();
             break;
         case 'adminupdateuser':
-            adminUpdateUser($_POST);
+            adminUpdateUser();
             break;
         case 'deleteuser':
-            deleteUser($_POST);
+            deleteUser();
             break;
         case 'userupdateprofile':
-            userUpdateProfile($_POST);
+            userUpdateProfile();
             break;
         case 'cancelrequest':
-            cancelRequest($_POST);
+            cancelRequest();
             break;
         case 'approverequest':
-            approveRequest($_POST);
+            approveRequest();
             break;
         case 'disapproverequest':
-            disapproveRequest($_POST);
+            disapproveRequest();
             break;
         case 'requestdocument':
-            requestDocument($_POST);
+            requestDocument();
             break;
         case 'downloadattachment':
-            downloadAttachment($_POST);
+            downloadAttachment();
             break;
         default:
             echo "Unknown action";
